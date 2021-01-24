@@ -42,38 +42,38 @@ class MyApp extends StatelessWidget {
           //   ),
 
           // LECTURE: 43 CHALLENGE
-          // child: Row(
-          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //   children: <Widget>[
-          //     Container(
-          //       width: 100,
-          //       height: double.infinity,
-          //       color: Colors.redAccent,
-          //     ),
-          //     Column(
-          //       mainAxisAlignment: MainAxisAlignment.center,
-          //       children: [
-          //         SizedBox(),
-          //         Container(
-          //           height: 100,
-          //           width: 100,
-          //           color: Colors.yellow,
-          //         ),
-          //         Container(
-          //           height: 100,
-          //           width: 100,
-          //           color: Colors.green,
-          //         ),
-          //         SizedBox(),
-          //       ],
-          //     ),
-          //     Container(
-          //       width: 100,
-          //       height: double.infinity,
-          //       color: Colors.redAccent,
-          //     ),
-          //   ],
-          // ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Container(
+                width: 100,
+                height: double.infinity,
+                color: Colors.redAccent,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.green,
+                  ),
+                  SizedBox(),
+                ],
+              ),
+              Container(
+                width: 100,
+                height: double.infinity,
+                color: Colors.redAccent,
+              ),
+            ],
+          ),
           ),
         ),
       );
