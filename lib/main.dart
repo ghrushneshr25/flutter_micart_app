@@ -42,38 +42,56 @@ class MyApp extends StatelessWidget {
           //   ),
 
           // LECTURE: 43 CHALLENGE
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // child: Row(
+          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //   children: <Widget>[
+          //     Container(
+          //       width: 100,
+          //       height: double.infinity,
+          //       color: Colors.redAccent,
+          //     ),
+          //     Column(
+          //       mainAxisAlignment: MainAxisAlignment.center,
+          //       children: [
+          //         SizedBox(),
+          //         Container(
+          //           height: 100,
+          //           width: 100,
+          //           color: Colors.yellow,
+          //         ),
+          //         Container(
+          //           height: 100,
+          //           width: 100,
+          //           color: Colors.green,
+          //         ),
+          //         SizedBox(),
+          //       ],
+          //     ),
+          //     Container(
+          //       width: 100,
+          //       height: double.infinity,
+          //       color: Colors.redAccent,
+          //     ),
+          //   ],
+          // ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Container(
-                width: 100,
-                height: double.infinity,
-                color: Colors.redAccent,
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage("images/ghrushProfilePic.jpg")
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SizedBox(),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.green,
-                  ),
-                  SizedBox(),
-                ],
-              ),
-              Container(
-                width: 100,
-                height: double.infinity,
-                color: Colors.redAccent,
+              Text(
+                "Ghrushnesh Rathod",
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
-          ),
+            ),
           ),
         ),
       );
