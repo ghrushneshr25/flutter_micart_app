@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue.shade400,
         body: SafeArea(
           // child: Column(
           //   // verticalDirection: VerticalDirection.up,
@@ -83,11 +83,77 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage("images/ghrushProfilePic.jpg")
               ),
               Text(
-                "Ghrushnesh Rathod",
+                "Ghrushnesh",
                 style: TextStyle(
-                  fontSize: 40.0,
+                  fontFamily: 'Potta One',
+                  fontSize: 45.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20.0,
+                  color: Colors.white,
+                  letterSpacing: 2.5,
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.blue.shade200,
+                ),),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                //padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.blue.shade400,
+                      size: 30.0,
+                    ),
+                    title: Text(
+                      "+91 7506518920",
+                      style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                        color: Colors.blue.shade400,
+                        letterSpacing: 0.5,
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
+                //padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.blue.shade400,
+                      size: 30.0,
+                    ),
+                    title: Text(
+                      "ghrushneshr25@gmail.com",
+                      style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                        color: Colors.blue.shade400,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
